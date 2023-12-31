@@ -21,11 +21,17 @@
     let disabled = false
 
 
+
+
+
 </script>
 
 <div class="center">
 <h1>Hello {name}</h1>
 <h2>I {isHired} work in {@html company}</h2>
+
+
+
 
 
 <button on:click={() => disabled = !disabled}>Toggle</button>
@@ -40,7 +46,7 @@
 
 
 
-<button {disabled} on:click={() => alert("I am clicked")}>Buy vimal</button>
+<button {disabled} on:click={() => alert("Bolo zuba kesri")}>Buy vimal</button>
 
 <br />
 
@@ -55,7 +61,7 @@
         font-size: 2rem;
     }
 
-
+ 
     .center {
         display: flex;
         flex-direction: column;
