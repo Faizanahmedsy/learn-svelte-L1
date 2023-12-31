@@ -35,14 +35,18 @@
 
 
 <!-- iterating over an array  -->
+
+<!-- here (item) is where you would typically put _id that you get from api -->
 <div>
-    {#each name as item, index}
+    {#each name as item, index (item)}
         <h2 >{index + 1} {item}</h2>
     {/each}
 </div>
 
+
+<!-- I am using (item.firstName) here as a key because in my case it is unique, however you should always use _id from api for keys  -->
 <div>
-    {#each fullNames as item,index}
+    {#each fullNames as item,index (item.firstName)}
     <h2>{index+ 1} {item.firstName} {item.lastName}</h2>
     {/each}
 </div>
